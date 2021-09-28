@@ -1,0 +1,24 @@
+{
+    "name": "twittor-server-client",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "nodemon server/server.js",
+        "dev": "nodemon server/server --ignore 'server/subs-db.json' ",
+        "generate-vapid": "web-push generate-vapid-keys --json > server/vapid.json"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "^1.18.3",
+        "express": "^4.16.3",
+        "express-router": "^0.0.1",
+        "web-push": "^3.4.5"
+    },
+    "devDependencies": {
+        "nodemo": "^1.0.0",
+        "nodemon": "^2.0.13"
+    }
+}
